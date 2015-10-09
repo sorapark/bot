@@ -1,0 +1,17 @@
+<h1>심심이에게 알려주세요.</h1>
+
+<form action="/bot/create">
+    <input type="text" name="question" placeholder="질문">
+    <textarea name="answer"></textarea>
+    <input type="submit">
+</form>
+<br>
+
+심심이가 학습한 대화목록<br><br>
+<% @Bots.each do |p| %>
+<li><%=p.id%> : <%=p.question%> : <%=p.answer%>
+</li>
+<%end%>
+
+
+<p><a href="/"> 채팅하러 가기 </a></p>

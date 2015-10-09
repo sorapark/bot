@@ -1,0 +1,14 @@
+<h1>안녕하세요! 심심이 입니다.</h1>
+<p><a href="/bot/edit">심심이 학습</a></p>
+<p>심심이에게 전할 말을 입력해 주세요.
+<form action="bot/chat">
+    <input type="text" name="chat_input" placeholder="채팅내용을 입력하세요"> <input type="submit">
+</form>
+</p>
+
+<br>
+<br>
+<% @chats.each do |p| %>
+<li><font color="blue">나 : <%=p.person%> </font><font size="1" color="gray"><%=p.created_at%></font></li>
+<li><font color="red">심심이 : <%=p.bot%></font> <font size="1" color="gray"><%=p.created_at%></font></li>
+<%end%>
