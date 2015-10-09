@@ -10,6 +10,8 @@
 심심이가 학습한 대화목록<br><br>
 <% @Bots.each do |p| %>
 <li><%=p.id%> : <%=p.question%> : <%=p.answer%>
+<a href="/bot/modify?id=<%=p.id%>">수정</a>
+<a href="/bot/destroy?id=<%=p.id%>">삭제</a>
 </li>
 <%end%>
 

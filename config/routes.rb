@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get '/bot/create'
   get '/bot/chat'
   get '/bot/destroy'
+  get '/bot/modify'
+  get '/bot/update'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

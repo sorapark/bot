@@ -1,0 +1,11 @@
+<h1>학습한 내용 수정</h1>
+
+<form action="/bot/update">
+    <input type="hidden" name="id" value="<%=@bot.id%>">
+    <input type="text" name="question" placeholder="질문" value="<%=@bot.question%>"><br>
+    <textarea name="answer"><%=@bot.answer%></textarea><br>
+    <input type="submit">
+</form>
+<br>
+
+
